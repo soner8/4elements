@@ -1,3 +1,11 @@
+/* Code couleur pour identifier chaque container
+Vert: container-fluid;
+Bleu: row;
+Rouge: col-4;
+Rose: col-12;
+*/
+
+
 .col-4 {
 	border: 1px red solid;
 }
@@ -15,7 +23,7 @@
 }
 
 
-
+/* Chaque page mesure 100vh (100% de la hauteur du device utilisé)*/
 
 
 
@@ -27,7 +35,7 @@
 
 
 
-
+/* Chaque section est colorée pour illustrer que chaque section fait 100vh */
 
 
 
