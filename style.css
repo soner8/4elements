@@ -1,4 +1,89 @@
-.phone {
-	display: flex;
-	justify-content: flex-end;
+.col-4 {
+	border: 1px red solid;
 }
+
+.col-12 {
+	border: 1px pink solid;
+}
+
+.container-fluid {
+	border: green 1px solid;
+}
+
+.row {
+	border: blue solid 1px;
+}
+
+
+
+
+
+
+
+
+#welcomePage, #eat, #sport, #menu {
+	height: 100vh;
+}
+
+
+
+
+
+
+
+#eat {
+	background-color: yellow;
+}
+
+#sport {
+	background-color: green;
+}
+
+#menu {
+	background-color: blue;
+}
+
+
+.welcomePage {
+	height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
