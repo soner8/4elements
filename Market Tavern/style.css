@@ -1,0 +1,68 @@
+
+
+
+nav {
+	position: relative;
+}
+	
+body, html {
+		height: 100%;
+}
+
+/* Images de fond (bg = Background) */
+.bgHome { 
+		/* The image used */
+		background-image: url("images/home.jpg");
+	
+		/* Full height */
+		height: 100%; 
+	
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}        
+
+.bgEat {
+	background-image: url("images/eat.jpg");
+
+	height: 100%; 
+	
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.bgSport {
+	background-image: url("images/sport.jpg");
+
+	height: 100%; 
+	
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.bgDrink {
+	background-image: url("images/drink.jpg");
+
+	height: 100%; 
+	
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.bgEvent {
+	background-image: url("images/events.jpg");
+
+	height: 100%; 
+	
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
