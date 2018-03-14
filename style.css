@@ -174,9 +174,11 @@ body {
   overflow: auto;
   background: #263e7d;
 }
-.modal-body p {
-    border: cornsilk solid 5px;
+.modal-body  {
+    border: #fbebd5 solid 3.5px;
     text-align: center;
+    border-radius: 5px;
+    font-family: 'menu';
 }
 .modal-body h2{
     text-align: center;
@@ -197,6 +199,10 @@ body {
 
     font-size: 10vh;
     
+}
+
+.maco {
+    background-color:#fbebd5;
 }
 .infoPage {
     text-align: center;
@@ -221,11 +227,12 @@ h3 {
   }
 }
 
-p {
+h3 {
   font-size: 1.4em;
   line-height: 1.5;
   color: #fbebd5;
-
+  font-family: 'menu';
+  text-align: center;
   // last
   &:last-child {
     margin-bottom: 0;
