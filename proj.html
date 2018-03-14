@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>The Market Tavern</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar **************************** -->
+    <nav class="fixed-top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="menuToggler1 col-6">
+                    <!-- I use bootstrap to set the width and the position of the togglers -->
+
+                    <!-- Main menu (eat, sport, ...) refere to the CSS to understand better -->
+
+                    <!-- /!\ je l'a fait en français :P 
+            On va avoir là du JS. L'élément [onclick ="" ] est un événement JS.
+            Que sont les événements?
+            Je vous l'a fait courte:
+            Les événements permettent de déclencher une fonction selon qu'une action s'est produite ou non.
+            Ici, onclick = quand on clic (appuyer puis relâcher sur l'élément).
+            Ainsi, dans l'élément [onclick = ""] j'ai mis en valeur le nom d'une fonction que j'ai créé en JS (je vous rassure, rien de bien compliqué, je vous l'ai détaillée avant la balise fermante de ce <body> ... OK, c'est vrai, je l'ai pompée sur internet. Mais elle n'est pas compliquée en soi à comprendre). Cet élément a été mis dans des balises qui encadrent nos icones d'action (ouvrir le menu, afficher le numéro de téléphone, fermer le menu, ...).
+            Ainsi, si j'effectue l'action 'cliquer puis relâcher', je déclenche l'événement 'onclick' qui exécute le script en bas de cette page.
+            -->
+
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                            <img class="img-fluid mx-auto d-block croixNav t-25" src="icon/croix.svg" </a>
+                            <div class="overlay-content">
+                                <a href="#">EAT</a>
+                                <a href="#">SPORT</a>
+                                <a href="#">DRINK</a>
+                                <a href="#">EVENT</a>
+                                <a href="#">ABOUT US</a>
+                                <a href="#">CONTACT US</a>
+                            </div>
+                    </div>
+
+                    <!-- TOGGLER : width and height both set at 10vw in the attributes of the SVG-->
+
+
+
+
+                    <!-- Main menu toggler *********************-->
+
+                    <span class="mainMenuIcon" onclick="openNav()">
+                        <img class="img-fluid mx-auto d-block menuC t-25" src="icon/menuCream.svg">
+                    </span>
+                </div>
+
+                <!-- Même raisonnement que précédemment ******************* -->
+
+                <div class="col-6 menuToggler2">
+                    <div id="phoneNumber" class="overlay1">
+                        <a href="javascript:void(0)" class="closebtn1" onclick="hideNumber()"></a>
+                        <a href="javascript:void(0)" class="closebtn2" onclick="hideNumber()"></a>
+                        <div class="overlay1-content">
+                            <a href="tel:+33556440958">05 56 44 09 58</a>
+                        </div>
+                    </div>
+
+                    <!-- TOGGLER : width and height both set at 10vw in the attributes of the SVG-->
+                    <span class="phoneIcon" onclick="displayNumber()">
+                        <img class="img-fluid mx-auto d-block phoneC t-25" src="icon/phoneCream.svg">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Welcome Page *********************************  -->
+
+    <section class="bgHome">
+        <img class="img-fluid mx-auto d-block logo " src="icon/logo.png">
+    </section>
+
+    <!-- EAT ******************************* -->
+
+    <section class="bgEat">
+
+        <!--Bouton "Modal" renvoyant sur le menu -->
+        <div class="container-fluid">
+            <div class="row">
+                <button class="col-6 offset-3 btn btn-modal" data-toggle="modal" data-target="#burgerModal">
+                    <img class="img-fluid mx-auto d-block burger t-25" src="icon/hamburgerBlue.svg">
+                </button>
+            </div>
+        </div>
+
+        <div id="burgerModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <!-- dialog -->
+            <div class="modal-dialog">
+
+                <!-- content -->
+                <div class="modal-content">
+
+                    <!-- header -->
+                    <div class="modal-header">
+
+                        <ul class="nav nav-pills">
+                            <li role="presentation">
+                                <a href="#starters">Starters & Sharings</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#mains">Mains & Burgers </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#">Desserts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- header -->
+
+                    <!-- body -->
+                    <div class="modal-body">
+                        <h2 id=starters>Starters & Sharings</h2>
+
+                        <p>Liquor ipsum dolor sit amet bearded lady, grog murphy's bourbon lancer. Kamikaze vodka gimlet; old
+                            rip van winkle, lemon drop martell salty dog tom collins smoky martini ben nevis man o'war. Strathmill
+                            grand marniereu sea breeze b & b mickey slim. Cactus jack aberlour seven and seven, beefeater
+                            early times beefeater kalimotxo royal arrival jack rose. Cutty sark scots whisky b & b harper's
+                            finlandia agent orange pink lady three wise men gin fizz murphy's. Chartreuse french 75 brandy
+                            daisy widow's cork 7 crown ketel one captain morgan fleischmann's, hayride, edradour godfather.
+                            Long island iced tea choking hazard black bison, greyhound harvey wallbanger, "gibbon kir royale
+                            salty dog tonic and tequila."</p>
+                        <h2 id=mains>Mains & Burgers</h2>
+                        <p>Liquor ipsum dolor sit amet bearded lady, grog murphy's bourbon lancer. Kamikaze vodka gimlet; old
+                            rip van winkle, lemon drop martell salty dog tom collins smoky martini ben nevis man o'war. Strathmill
+                            grand marniereu sea breeze b & b mickey slim. Cactus jack aberlour seven and seven, beefeater
+                            early times beefeater kalimotxo royal arrival jack rose. Cutty sark scots whisky b & b harper's
+                            finlandia agent orange pink lady three wise men gin fizz murphy's. Chartreuse french 75 brandy
+                            daisy widow's cork 7 crown ketel one captain morgan fleischmann's, hayride, edradour godfather.
+                            Long island iced tea choking hazard black bison, greyhound harvey wallbanger, "gibbon kir royale
+                            salty dog tonic and tequila."</p>
+
+                    </div>
+                    <!-- body -->
+
+                    <!-- footer -->
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal">
+                            <img class="img-fluid mx-auto d-block" src="icon/croixBleue.svg" style="width: 10%; height: auto;">
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cadrePage">
+            <h2 class="titrePage">EAT</h2>
+            <h3 class="infoPage">Burgers </br> Pie </br>Brunch</h3>
+        </div>
+    </section>
+
+    <!-- SPORT ********************************** -->
+
+    <section class="bgSport">
+        <div class="container-fluid">
+            <div class="row">
+                <button class="col-6 offset-3 btn btn-modal" data-toggle="modal" data-target="#sportModal">
+                    <img class="img-fluid mx-auto d-block burger t-25" src="icon/sportCream.svg">
+                </button>
+            </div>
+        </div>
+
+        <div id="sportModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <!-- dialog -->
+            <div class="modal-dialog">
+
+                <!-- content -->
+                <div class="modal-content">
+
+                    <!-- header -->
+                    <div class="modal-header">
+                        <h1 id="myModalLabel" class="modal-title">BURGERS</h1>
+                    </div>
+                    <!-- header -->
+
+                    <!-- body -->
+                    <div class="modal-body">
+                        <h2>1. Modal sub-title</h2>
+
+                        <p>Liquor ipsum dolor sit amet bearded lady, grog murphy's bourbon lancer. Kamikaze vodka gimlet; old
+                            rip van winkle, lemon drop martell salty dog tom collins smoky martini ben nevis man o'war. Strathmill
+                            grand marnier sea breeze b & b mickey slim. Cactus jack aberlour seven and seven, beefeater early
+                            times beefeater kalimotxo royal arrival jack rose. Cutty sark scots whisky b & b harper's finlandia
+                            agent orange pink lady three wise men gin fizz murphy's. Chartreuse french 75 brandy daisy widow's
+                            cork 7 crown ketel one captain morgan fleischmann's, hayride, edradour godfather. Long island
+                            iced tea choking hazard black bison, greyhound harvey wallbanger, "gibbon kir royale salty dog
+                            tonic and tequila."</p>
+
+                    </div>
+                    <!-- body -->
+
+                    <!-- footer -->
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">
+                            close
+                        </button>
+    </section>
+
+    </section>
+
+
+    <!-- DRINK ********************************* -->
+
+    <section class="bgDrink">
+        <div class="container-fluid">
+            <div class="row">
+                <button class="col-6 offset-3 btn btn-modal" data-toggle="modal" data-target="#drinksModal">
+                    <img class="img-fluid mx-auto d-block burger t-25" src="icon/beerCream.svg">
+                </button>
+            </div>
+        </div>
+
+        <div id="drinksModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <!-- dialog -->
+            <div class="modal-dialog">
+
+                <!-- content -->
+                <div class="modal-content">
+
+                    <!-- header -->
+                    <div class="modal-header">
+                        <h1 id="myModalLabel" class="modal-title">DRINKS</h1>
+                    </div>
+                    <!-- header -->
+
+                    <!-- body -->
+                    <div class="modal-body">
+                        <h2>1. Modal sub-title</h2>
+
+                        <p>Liquor ipsum dolor sit amet bearded lady, grog murphy's bourbon lancer. Kamikaze vodka gimlet; old
+                            rip van winkle, lemon drop martell salty dog tom collins smoky martini ben nevis man o'war. Strathmill
+                            grand marnier sea breeze b & b mickey slim. Cactus jack aberlour seven and seven, beefeater early
+                            times beefeater kalimotxo royal arrival jack rose. Cutty sark scots whisky b & b harper's finlandia
+                            agent orange pink lady three wise men gin fizz murphy's. Chartreuse french 75 brandy daisy widow's
+                            cork 7 crown ketel one captain morgan fleischmann's, hayride, edradour godfather. Long island
+                            iced tea choking hazard black bison, greyhound harvey wallbanger, "gibbon kir royale salty dog
+                            tonic and tequila."</p>
+
+                    </div>
+                    <!-- body -->
+
+                    <!-- footer -->
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">
+                            close
+                        </button>
+    </section>
+
+    </section>
+
+
+
+    <!-- EVENT *************************** -->
+
+    <section class="bgEvent">
+        <div class="container-fluid">
+            <div class="row">
+                <button class="col-6 offset-3 btn btn-modal" data-toggle="modal" data-target="#eventModal">
+                    <img class="img-fluid mx-auto d-block burger t-25" src="icon/eventsBlue.svg">
+                </button>
+            </div>
+        </div>
+
+        <div id="eventModal" class="modal animated bounceIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+            <!-- dialog -->
+            <div class="modal-dialog">
+
+                <!-- content -->
+                <div class="modal-content">
+
+                    <!-- header -->
+                    <div class="modal-header">
+                        <h1 id="myModalLabel" class="modal-title">BURGERS</h1>
+                    </div>
+                    <!-- header -->
+
+                    <!-- body -->
+                    <div class="modal-body">
+                        <h2>Our Events</h2>
+
+                        <p>Liquor ipsum dolor sit amet bearded lady, grog murphy's bourbon lancer. Kamikaze vodka gimlet; old
+                            rip van winkle, lemon drop martell salty dog tom collins smoky martini ben nevis man o'war. Strathmill
+                            grand marnier sea breeze b & b mickey slim. Cactus jack aberlour seven and seven, beefeater early
+                            times beefeater kalimotxo royal arrival jack rose. Cutty sark scots whisky b & b harper's finlandia
+                            agent orange pink lady three wise men gin fizz murphy's. Chartreuse french 75 brandy daisy widow's
+                            cork 7 crown ketel one captain morgan fleischmann's, hayride, edradour godfather. Long island
+                            iced tea choking hazard black bison, greyhound harvey wallbanger, "gibbon kir royale salty dog
+                            tonic and tequila."</p>
+
+                    </div>
+                    <!-- body -->
+
+                    <!-- footer -->
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal">
+                            close
+                        </button>
+    </section>
+
+
+
+    <!-- Compte à rebourd -->
+    <section class="countdown">
+        <div class="container-fluid">
+            <div class="row">
+                <img class="btn img-fluid mx-auto d-block clock " src="icon/timerBlue.svg">
+            </div>
+            <div class="mx-auto d-block">
+                <h1 id="demo"></h1>
+                <script>
+                    // Date et heure d'échéanceh du compte à rebourd ! 
+                    var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+                    // Update the count down every 1 second
+                    var x = setInterval(function () {
+                        // Cherche la date et heure actuelle
+                        var now = new Date().getTime();
+                        // Calcul la difference entre la date de fin et la date actuelle
+                        var distance = countDownDate - now;
+                        // Time calculations for days, hours, minutes and seconds
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        // Affiche le résultat de la difference dans l'ID DEMO
+                        document.getElementById("demo").innerHTML = hours + "h "
+                            + minutes + "m " + seconds + "s ";
+                        // Si le compte à rebourd est terminé, affiche un message
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "C'est Partit !";
+                        }
+                    }, 1000);
+                </script>
+                <h1>FIFA </br>WORLD CUP</h1>
+            </div>
+        </div>
+    </section>
+    <!-- About Us ************************** -->
+    <!-- 
+    <section class="aboutUs">
+    </section> -->
+
+    <!-- Formulaire + Footer *********************** -->
+
+    <!-- <section class="formulary">
+    </section> -->
+
+    <!-- ********************************** -->
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.display = "block";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+        function displayNumber() {
+            document.getElementById("phoneNumber").style.display = "block";
+        }
+        function hideNumber() {
+            document.getElementById("phoneNumber").style.display = "none";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

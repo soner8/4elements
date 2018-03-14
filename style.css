@@ -1,0 +1,434 @@
+/* Partie Maco */
+
+@font-face{
+    font-family: 'menu';
+    src: url(police/glou/GLECB.TTF);
+}
+
+
+nav {
+	position: relative;
+}
+	
+body, html {
+		height: 100%;
+}
+
+/* Images de fond (bg = Background) */
+.bgHome { 
+		/* The image used */
+		background-image: url("images/home.jpg");
+	
+		/* Full height */
+		height: 100%; 
+	
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}        
+
+.bgEat {
+	background-image: url("images/eat.jpg");
+
+	height: 100%; 
+	
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.bgSport {
+	background-image: url("images/sport.jpg");
+
+	height: 100%; 
+	
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.bgDrink {
+	background-image: url("images/drink.jpg");
+
+	height: 100%; 
+	
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.bgEvent {
+	background-image: url("images/events.jpg");
+
+	height: 100%; 
+	
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
+
+.countdown {
+	background-color:#fbebd5;
+	height: 100%;
+}
+
+.countdown h1 {
+	color: #263e7d;
+	text-align: center; 
+	padding-top:10vh;
+}
+.countdown .clock {
+	width: 70%;
+	height: auto;
+	padding-top: 10vh;
+}
+.btn {
+	background: transparent;
+}
+
+/* Options pour les Modals */
+
+/* Importation des polices */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400);
+/* Nom des polices */
+.font-roboto {
+  font-family: 'menu';
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Definition des polices */
+body {
+  .font-roboto();
+}
+/* /Definition des polices */
+
+/* Alignement Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #3c7dcf;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.modal-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  padding: 10px;
+  background: #fbebd5;
+  border: 0;
+  text-align: center;
+}
+.nav-pills li {
+    margin-left: 5px; //use whatever you want
+} 
+/* .modal-header a {
+	border: slateblue 3px solid;
+} */
+.modal-title {
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  line-height: 30px;
+}
+.logo {
+    height:30vh;
+    margin-top: 10vh;
+}
+.modal-body {
+  position: absolute;
+  top: 50px;
+  bottom: 60px;
+  width: 100%;
+  font-weight: 300;
+  overflow: auto;
+  background: #263e7d;
+}
+.modal-body p {
+    border: cornsilk solid 5px;
+    text-align: center;
+}
+.modal-body h2{
+    text-align: center;
+}
+
+.modal-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  padding: 0;
+  background: #fbebd5;
+}
+.titrePage{
+    text-align: center;
+    color: #263e7d;
+
+    font-size: 10vh;
+    
+}
+.infoPage {
+    text-align: center;
+    color: #263e7d;
+    
+}
+.cadrePage{
+    margin-left:auto;
+margin-right:auto; 
+    border: #263e7d solid 10px;
+}
+/* Couleurs et attributs des polices */
+h1,
+h2,
+h3 {
+  color: #fbebd5;
+  line-height: 1.5;
+
+  // first
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+p {
+  font-size: 1.4em;
+  line-height: 1.5;
+  color: #fbebd5;
+
+  // last
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  background: #f1f3f5;
+  border-left: 1px solid darken(#f1f3f5, 10%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: darken(#f1f3f5, 20%);
+}
+
+/* Attributs bouton fermeture */
+.btn {
+	border: none;
+	color:  #263e7d;
+}
+
+.nav-pills a {
+	background-color:#fbebd5;
+	color: #263e7d;
+}
+/* Fin de Partie Maco */
+
+
+
+
+
+
+
+
+section {
+	border:red solid 1px;
+}
+
+.col-6 {
+	border: green solid 1px;
+}
+
+/* Width end Height of each page */
+
+section {
+	width: 100vw;
+	height: 100vh;
+}
+
+
+
+/* Position of the togglers in their own containers (menuToggler)*/
+/* Toggler1 is Main Menu Icon. Toggler2 is Phone Icon
+Toggler1 & Toggler2 are in a row container (bootstrap). 
+#1 is flex-start (left of the screen) in its col-6
+#2 is flex-end (right of the screen) in its col-6 */
+
+.menuToggler1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menuToggler2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuToggler1, .menuToggler2 {
+    padding-top: 1vh;
+}
+
+
+/* Main Menu ********************* */
+
+/* *********** overlay stands for the background of the items of the Main Menu ****** */
+
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(38,62,125, 0.9);
+    border:1px green solid;
+}
+
+/* overlay-content stands for the content of the Main Menu*/
+
+.overlay-content {
+    padding-top: 15vh; /* starts at 15vh from the top */
+    width: 100vw;       /* each container containing the text is full width */
+    text-align: center; 
+}
+
+/* Now we set the text itself (eat, sport, ...) */
+
+.overlay a {
+    padding: 2vh; 
+    text-decoration: none;
+    font-size: 5vh;
+    color: #fbebd5;
+    display: block;
+    transition: 0.3s;
+    border:1px red solid;
+}
+
+/* We set here the color of the links when hovered and when clicked */
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* We position at the top right of the screen the cross to quit the Main Menu*/
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15vh; /* we use *vh as unit like for the height of the "overlay & overlay a" to be sure it won't overflow. RESPONSIVE ;) */
+    height: 15vh;
+    border:yellow 1px solid;
+}
+
+/* cursor pointer is a property that permit to get a hand instead of the classic mouse when the span targeted is hoveres */
+
+.mainMenuIcon {
+    cursor:pointer;
+}
+
+
+
+
+
+/* Phone Number Same reasoning than for the Main Menu ******************** */
+/* *closebtn1/closebtn2* We create 2 buttons to hide the phone number: first one at the top left, second one at the top right */
+.menuC {
+    height: 7vh;
+}
+.phoneC {
+    height: 7vh;
+}
+.croixNav {
+    height: 7vh;
+}
+.overlay1 {
+    height: 15vw;
+    width: 100vw;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border:1px green solid;
+}
+#phoneNumber a {
+    color:#fbebd5;
+}
+
+.overlay1-content {
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay1-content a {
+    width: 60vw;
+    border:1px red solid;
+}
+
+.overlay1 a {
+    font-size: 8vw;
+    color: #263e7d;
+    display: block;
+    transition: 0.3s;
+    height: 15vw;
+}
+
+.overlay1 a:hover, .overlay1 a:focus {
+    color: #f1f1f1;
+}
+
+.closebtn1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px blue solid;
+    padding: 5vw 10vw;
+}
+
+.closebtn2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px blue solid;
+    padding: 5vw 10vw;
+}
+
+.phoneIcon {
+    cursor:pointer;
+}
